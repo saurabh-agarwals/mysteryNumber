@@ -22,9 +22,6 @@ func (m *MysteryNumberTest) setMysteryNumber(mysteryNumber int) {
 }
 
 func (m *MysteryNumberTest) playMysteryNumber(userGuess int) string {
-	fmt.Printf("userGusess %v mysteryNumber %v lowestGuessNumber %v highestGuessNumber %v \n",
-		userGuess, m.mysteryNumber, m.lowestGuessNumber, m.highestGuessNumber)
-
 	if userGuess == m.mysteryNumber {
 		return fmt.Sprintf("%v", "You are the loser")
 	}
